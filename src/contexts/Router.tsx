@@ -1,10 +1,13 @@
 import { createContext, useState } from "react";
 import Home from "../pages/Home";
+import Privacy from "../pages/Privacy";
+import Support from "../pages/Support";
+import Navbar from "../components/Navbar";
 
 enum Page {
-    Home = '/home',
+    Home = '/',
     Privacy = '/privacy',
-    Contact = '/contact',
+    Support = '/support',
   }
 
 const initialState = {
@@ -18,9 +21,9 @@ export function RouterProvider() {
     const currentRoute = window.location.pathname as Page;
 
     if (!Object.values(Page).includes(currentRoute)) {
-        window.location.href = '/home';
+        window.location.href = Page.Home;
     }
-      
+
     const [page, setPage] = useState<Page>(currentRoute as Page);
 
     return (
@@ -29,6 +32,9 @@ export function RouterProvider() {
             setPage
         }}>
             {page === Page.Home && <Home />}
+            {page === Page.Privacy && <Privacy />}
+            {page === Page.Support && <Support />}
+            <Navbar />
         </RouterContext.Provider>
     );
 }

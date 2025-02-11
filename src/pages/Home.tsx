@@ -1,11 +1,11 @@
-import icon from '../assets/icon.png';
+import icon from '../assets/icon.webp';
 import downloadButton from '../assets/download-button.svg';
-import screenshot1 from '../assets/screenshots/screenshot_1.png';
-import screenshot2 from '../assets/screenshots/screenshot_2.png';
-import screenshot3 from '../assets/screenshots/screenshot_3.png';
-import screenshot4 from '../assets/screenshots/screenshot_4.png';
-import screenshot5 from '../assets/screenshots/screenshot_5.png';
-import screenshot6 from '../assets/screenshots/screenshot_6.png';
+import screenshot1 from '../assets/screenshots/screenshot_1.webp';
+import screenshot2 from '../assets/screenshots/screenshot_2.webp';
+import screenshot3 from '../assets/screenshots/screenshot_3.webp';
+import screenshot4 from '../assets/screenshots/screenshot_4.webp';
+import screenshot5 from '../assets/screenshots/screenshot_5.webp';
+import screenshot6 from '../assets/screenshots/screenshot_6.webp';
 
 const screenshots = [
     screenshot1,
