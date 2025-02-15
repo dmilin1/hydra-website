@@ -37,10 +37,12 @@ export default function Home() {
             <div>It features a beautifully designed, native iOS experience that feels right at home on your device. Hydra is the best way to browse Reddit, with a gorgeous image and video viewer, multireddit support, favorite subreddits, multiple account support, and much more.</div>
             <div>Hydra is the Reddit client you've been waiting for.</div>
         </div>
-        <img
-            className='w-48'
-            src={downloadButton}
-        />
+        <a href="https://apps.apple.com/us/app/hydra-for-reddit/id6478089063">
+            <img
+                className='w-48 cursor-pointer'
+                src={downloadButton}
+            />
+        </a>
         <div className='max-w-full flex flex-wrap justify-center gap-6 mx-4'>
             {screenshots.map((screenshot, index) => (
                 <img

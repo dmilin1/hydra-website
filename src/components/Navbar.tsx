@@ -10,7 +10,7 @@ export default function Navbar() {
                 <a href='/support'>Support</a>
             </div>
             <div className='flex gap-4 justify-center'>
-                <a href='https://apps.apple.com/us/app/hydra-for-reddit/id1557697374'>
+                <a href='https://apps.apple.com/us/app/hydra-for-reddit/id6478089063'>
                     <img className='h-8' src={downloadButton} />
                 </a>
                 <a href='https://discord.gg/ypaD4KYJ3R'>
