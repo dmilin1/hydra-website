@@ -1,8 +1,9 @@
 import { RouterProvider } from './contexts/Router';
+import './App.css';
 
 function App() {
   return (
-    <div className='flex flex-col items-center w-screen h-screen overflow-x-hidden'>
+    <div className='flex flex-col items-center justify-between min-h-[100dvh]'>
       <RouterProvider />
     </div>
   )
