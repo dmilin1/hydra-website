@@ -5,7 +5,7 @@ export default function Navbar() {
         <div className='flex flex-col sm:flex-row justify-between items-center gap-4 h-16 bg-white text-black mb-16'>
             <div className='flex items-center justify-evenly gap-4 w-full sm:w-auto text-md'>
                 <a href='/'>Home</a>
-                <a href='https://www.reddit.com/r/HydraApp/'>/r/HydraApp</a>
+                <a href='https://www.reddit.com/r/HydraClient/'>/r/HydraClient</a>
                 <a href='/privacy'>Privacy</a>
                 <a href='/support'>Support</a>
             </div>
