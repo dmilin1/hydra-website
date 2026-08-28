@@ -1,4 +1,5 @@
 import downloadButton from '../assets/download-button.svg';
+import playDownloadButton from '../assets/play-download-button.svg';
 
 export default function Navbar() {
     return (
@@ -12,8 +13,11 @@ export default function Navbar() {
                     <li><a href='/support'>Support</a></li>
                 </ul>
                 <div className='flex items-center justify-center gap-4 shrink-0'>
-                    <a href='https://apps.apple.com/us/app/hydra-for-reddit/id6478089063'>
+                    <a href='https://apps.apple.com/us/app/hydra-read-upvote-comment/id6478089063'>
                         <img className='h-8' src={downloadButton} alt='Download on the App Store' />
+                    </a>
+                    <a href='https://play.google.com/store/apps/details?id=com.dmilin.hydra'>
+                        <img className='h-8' src={playDownloadButton} alt='Get it on Google Play' />
                     </a>
                     <a href='https://discord.gg/ypaD4KYJ3R'>
                         <img className='h-8' src='https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/653714c1c2d8d50382c7df8a_636e0b5061df29d55a92d945_full_logo_blurple_RGB.svg' alt='Join our Discord' />

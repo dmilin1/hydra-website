@@ -1,5 +1,6 @@
 import icon from '../assets/icon.webp';
 import downloadButton from '../assets/download-button.svg';
+import playDownloadButton from '../assets/play-download-button.svg';
 import screenshot1 from '../assets/screenshots/screenshot_1.webp';
 import screenshot2 from '../assets/screenshots/screenshot_2.webp';
 import screenshot3 from '../assets/screenshots/screenshot_3.webp';
@@ -34,15 +35,25 @@ export default function Home() {
         </div>
         <div className='flex flex-col gap-4 text-black mx-12'>
             <div>Hydra is a Reddit client built from the feedback of thousands of passionate Reddit users looking for the best possible experience.</div>
-            <div>It features a beautifully designed, native iOS experience that feels right at home on your device. Hydra is the best way to browse Reddit, with a gorgeous image and video viewer, multireddit support, favorite subreddits, multiple account support, and much more.</div>
+            <div>It features a beautifully designed, native experience that feels right at home on your device. Hydra is the best way to browse Reddit, with a gorgeous image and video viewer, multireddit support, favorite subreddits, multiple account support, and much more.</div>
             <div>Hydra is the Reddit client you've been waiting for.</div>
         </div>
-        <a href="https://apps.apple.com/us/app/hydra-for-reddit/id6478089063">
-            <img
-                className='w-48 cursor-pointer'
-                src={downloadButton}
-            />
-        </a>
+        <div className='flex flex-wrap items-center justify-center gap-4'>
+            <a href="https://apps.apple.com/us/app/hydra-read-upvote-comment/id6478089063">
+                <img
+                    className='w-48 cursor-pointer'
+                    src={downloadButton}
+                    alt='Download on the App Store'
+                />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.dmilin.hydra">
+                <img
+                    className='w-48 cursor-pointer'
+                    src={playDownloadButton}
+                    alt='Get it on Google Play'
+                />
+            </a>
+        </div>
         <div className='max-w-full flex flex-wrap justify-center gap-6 mx-4'>
             {screenshots.map((screenshot, index) => (
                 <img
